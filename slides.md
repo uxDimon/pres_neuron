@@ -15,22 +15,22 @@ mdc: true
 overviewSnapshots: true
 ---
 
-<h1 class="title_1">AI для разработки</h1>
+<h1 class="title_1">Увлекательная <br/>разработка с AI</h1>
 
-что бы не страдал разработчик
+Доступные AI и что с ними делать
 
 <br>
+<br>
 
-- Автолояуты (Auto layout)
-- Мастер компоненты
-- Организация проекта
-    - Картинок (декорации)
-    - Иконки
-    - Стрелки
-    - Имена/Шрифты/Всякое
+- Специфика использования AI
+- AI в редакторе кода (GitHub Copilot, Codeium)
+- Бесплатные / доступные чаты (DeepSeek, Qwen)
+- Локальные AI (Ollama + Continue)
+- Провайдеры AI (Bothub, GPTunneL)
+- Философия использования
 
-<v-drag class='video_1' pos="610,-30,360,1000,1">
-  <video controls='false' autoplay="autoplay" muted loop width="360"  src="./assets/1/prog_vs_des.mp4"></video>
+<v-drag class='video_1' pos="560,20,1000,1000,1">
+  <img class="w-[390px] h-auto" src="./assets/1/start.webp"  width="1080" height="1444" >
 </v-drag>
 
 <style>
@@ -39,137 +39,138 @@ overviewSnapshots: true
     z-index: 110;
     background: #121212;
     display: inline-block;
+    line-height: 4rem !important;
   }
 </style>
 
 ---
 
-# Автолояуты (Auto layout)
+# Специфика использования AI
 
-Чем больше тем лучше
+Чат / Автозаполнение
 
-<video controls='false' autoplay="autoplay" muted loop width="800"  src="./assets/2/auto_layout.mp4"></video>
+<br>
+<br>
 
-[Auto layout](https://help.figma.com/hc/en-us/sections/13165750874519-Use-auto-layout)
-
----
-
-# Мастер компоненты
-
-Мысли как разработчик
+- Генерация кода с учётом контекста
+- Модификация кода
+- Объяснения как работает код
+- Исправление ошибок
+- Генерация документации
 
 <v-drag pos="30,124,2000,_,0">
-    <img v-click='[0]' class="w-[620px] h-auto" src="./assets/3/slide_5-1.webp"  width="1920" height="1553" >
+    <video v-click='[1]' class="w-[700px] h-auto" controls='false' autoplay="autoplay" muted loop width="2496"  src="./assets/2/chat.mp4"></video>
 </v-drag>
 
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[1]' class="w-[920px] h-auto" src="./assets/3/slide_5-2-1.webp"  width="1742" height="460" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[2]' class="w-[920px] h-auto" src="./assets/3/slide_5-2-2.webp"  width="1742" height="460" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[3]' class="w-[920px] h-auto" src="./assets/3/slide_5-2-3.webp"  width="1742" height="460" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[4]' class="w-[920px] h-auto" src="./assets/3/slide_5-2-4.webp"  width="1742" height="460" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[5]' class="w-[700px] h-auto" src="./assets/3/slide_5-3.webp"  width="637" height="358" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-    <img v-click='[6]' class="w-[560px] h-auto" src="./assets/3/slide_5-4.webp"  width="561" height="292" >
-</v-drag>
-
-<v-drag pos="30,120,2000,_,0">
-  <div>
-    <img v-click='7' class="w-[360px] h-auto" src="./assets/3/slide_5-5.webp"  width="274" height="289" >
-    <a v-click='7' href="https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties" target="_blank">Component</a>
-  </div>
+<v-drag pos="30,124,2000,_,0">
+    <img v-click='2' class="w-[800px] h-auto" src="./assets/2/autocomplete.webp"  width="1600" >
 </v-drag>
 
 ---
 
-# Организация проекта
+# AI в редакторе кода
 
-Картинок (декорации)
+Доступно нам не так много(
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[0]' class="w-[620px] h-auto" src="./assets/4/slide_6-1-1.webp"  width="1920" height="1171" >
-</v-drag>
+## [GitHub Copilot](https://github.com/features/copilot)
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[1]' class="w-[620px] h-auto" src="./assets/4/slide_6-1-2.webp"  width="1920" height="1171" >
-</v-drag>
+<br/>
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[2]' class="w-[620px] h-auto" src="./assets/4/slide_6-2-1.webp"  width="1920" height="1171" >
-</v-drag>
+- Без VPN ничего не получится (Работает только с vpn)
+- Ограничения бесплатной версии
+- Проблема с покупкой $10
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[3]' class="w-[620px] h-auto" src="./assets/4/slide_6-2-2.webp"  width="1920" height="1171" >
-</v-drag>
+## [Codeium](https://codeium.com/)
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[4]' class="w-[620px] h-auto" src="./assets/4/slide_6-3-1.webp"  width="1920" height="1171" >
-</v-drag>
+<br/>
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[5]' class="w-[620px] h-auto" src="./assets/4/slide_6-3-2.webp"  width="1920" height="1171" >
-</v-drag>
+- Чат не работает совсем
+- Проблема с покупкой $15
 
-<v-drag pos="20,154,2000,_,0">
-    <img v-click='[6]' class="w-[930px] h-auto" src="./assets/4/slide_6-4.webp"  width="3245" height="1124" >
-</v-drag>
+---
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='7' class="w-[820px] h-auto" src="./assets/4/slide_6-5.webp"  width="1920" >
+# Бесплатные / доступные чаты
+
+Китайские народные слоняры с крепким нефритовым стержнем
+
+<br/>
+<br/>
+
+<img class="w-[320px] h-auto" src="./assets/4/DeepSeek.svg"  width="196"  >
+
+[DeepSeek](https://www.deepseek.com/) `DeepSeek-R1`
+
+<br/>
+
+<img class="w-[260px] h-auto" src="./assets/4/Qwen.svg"  width="129"  >
+
+[Qwen](https://chat.qwenlm.ai/) `Qwen2.5-Plus` `Qwen2.5-Max`
+
+<v-drag pos="560,170,2000,_,2">
+    <img class="w-[360px] h-auto" src="./assets/4/image4.webp"  width="680" >
 </v-drag>
 
 ---
 
-# Организация проекта
+# Локальные AI
 
-Иконки
+Самый простой способ поднять локальную AI
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[0]' class="w-[510px] h-auto" src="./assets/5/slide_7-1.webp"  width="1536" height="1236" >
+<v-drag pos="630,40,2000,_,0">
+    <img class="w-[240px] h-auto" src="./assets/5/Ollama.svg"  width="129">
 </v-drag>
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='1' class="w-[600px] h-auto" src="./assets/5/slide_7-2.webp"   width="1996" height="1376" >
+[Ollama](https://ollama.com/)
+
+| Model            | Parameters | Size   |
+| ---------------- | ---------- | ------ |
+| deepseek-r1:1.5b | 1.5B       | 1.1 GB |
+| deepseek-r1:7b   | 7B         | 4.7 GB |
+| deepseek-r1:14b  | 14B        | 9 GB   |
+| deepseek-r1:32b  | 32B        | 20 GB  |
+| deepseek-r1:70b  | 70B        | 43 GB  |
+| deepseek-r1:671b | 671B       | 404 GB |
+
+---
+
+# Локальные AI
+
+Но есть нюанс
+
+<v-drag pos="630,40,2000,_,0">
+    <img class="w-[240px] h-auto" src="./assets/5/Ollama.svg"  width="129">
+</v-drag>
+
+deepseek-r1 - 671B - 404GB
+
+<v-drag pos="46,166,2000,_,0">
+    <img v-click='[0]' class="w-[660px] h-auto" src="./assets/5/gpu2.webp"  width="883" >
+</v-drag>
+
+<v-drag pos="46,166,2000,_,0">
+    <img v-click='1' class="w-[660px] h-auto" src="./assets/5/gpu1.webp"  width="883" >
 </v-drag>
 
 ---
 
-# Стрелки
+# Локальные AI
 
-Не используйте дефолтные стрелки
+Внутри в редакторе кода
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[0]' class="w-[410px] h-auto" src="./assets/6/slide_7-1.webp"  width="600" height="600" >
+<v-drag pos="340,40,2000,_,0">
+    <img class="w-[600px] h-auto" src="./assets/5/Ollama+Continue.svg"  width="369">
 </v-drag>
 
-<v-drag pos="500,90,2000,_,0">
-    <img v-click='[0]' class="w-[410px] h-auto" src="./assets/6/slide_7-11.png"  width="581" height="650" >
-</v-drag>
+[Continue Autocomplete](https://docs.continue.dev/customize/deep-dives/autocomplete)
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[1]' class="w-[410px] h-auto" src="./assets/6/slide_7-2.webp"  width="600" height="600" >
-</v-drag>
-
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[2]' class="w-[410px] h-auto" src="./assets/6/slide_7-3.webp"  width="600" height="600" >
-</v-drag>
-
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='3' class="w-[410px] h-auto" src="./assets/6/slide_7-4.webp"  width="600" height="600" >
-</v-drag>
+| Model               | Parameters |  Size  |
+| ------------------- | :--------: | :----: |
+| dqwen2.5-coder:0.5b |    0.5B    | 531 MB |
+| dqwen2.5-coder:1.5b |    1.5B    | 986 MB |
+| dqwen2.5-coder:3b   |     3B     | 1.9 GB |
+| dqwen2.5-coder:7b   |     7B     | 4.7 GB |
+| dqwen2.5-coder:14b  |    14B     |  9 GB  |
+| dqwen2.5-coder:32b  |    32B     | 20 GB  |
 
 ---
 

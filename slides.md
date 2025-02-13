@@ -174,20 +174,164 @@ deepseek-r1 - 671B - 404GB
 
 ---
 
-# Имена/Шрифты/Всякое
+# Провайдеры AI
 
-Не обязательно но приятненько
+Доступ к куче нейросеток за православные рубли 🤑
 
-<v-drag pos="50,124,2000,_,0">
-    <video v-click='[0]' controls='false' autoplay="autoplay" muted loop width="600"  src="./assets/7/name.mp4"></video>
+<br/>
+<br/>
+
+## [Bot hub](https://bothub.chat/main)
+
+<br/>
+
+## [GPTunnel](https://gptunnel.ru/)
+
+<v-drag pos="580,120,2000,_,-2">
+    <img class="w-[360px] h-auto" src="./assets/6/image.png"  width="1116" >
 </v-drag>
 
-<v-drag pos="50,124,2000,_,0">
-    <img v-click='[1]' class="w-[710px] h-auto" src="./assets/7/fonts_1.gif"  width="1600"  >
-    <br/>
-    <img v-click='[1]' class="w-[710px] h-auto" src="./assets/7/fonts_3.gif"  width="1600"  >
+---
+
+# Философия использования
+
+<v-drag pos="60,120,2000,_,0">
+    <img class="w-[560px] h-auto" src="./assets/7/w1.webp"  width="674" >
 </v-drag>
 
-<v-drag pos="30,124,2000,_,0">
-    <img v-click='[2]' class="w-[460px] h-auto" src="./assets/7/svg.jpg"  width="1125" height="1005" >
+<v-drag pos="60,120,2000,_,0">
+    <img class="w-[560px] h-auto tnm" src="./assets/7/w2.webp"  width="674" >
 </v-drag>
+
+<style>
+    .tnm {
+        animation-duration: 20s;
+        animation-name: slidein;
+        animation-timing-function: steps(1, end); 
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes slidein {
+        0% {
+            opacity: 1;
+        }
+
+        33% {
+            opacity: 0;
+        }
+
+        36% {
+            opacity: 1;
+        }
+
+        90% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+---
+
+# Философия использования
+
+> Напиши на тайпскрипт функцию которая будет возвращать строку из 10 случайных символов
+
+<br/>
+
+```typescript
+function generateRandomString(): string {
+	const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	return Array.from({ length: 10 }, () => characters[Math.floor(Math.random() * characters.length)]).join("");
+}
+```
+
+<br/>
+
+### Объяснение:
+
+Набор символов: Используются буквы латинского алфавита (верхний и нижний регистр) и цифры.
+
+- `Array.from({length: 10})` создаёт массив из 10 элементов.
+- Для каждого элемента случайно выбирается символ из набора `characters`.
+- Сборка строки: Массив преобразуется в строку с помощью `.join('')`.
+
+---
+
+# Криптографически безопасная генерация
+
+<br/>
+
+Для генерации паролей/токенов используйте `crypto`:
+
+```typescript
+function generateSecureRandomString(
+	length: number = 10,
+	chars: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+): string {
+	const randomValues = new Uint32Array(length);
+	crypto.getRandomValues(randomValues);
+
+	return Array.from(randomValues, (value) => chars[value % chars.length]).join("");
+}
+```
+
+<br/>
+
+### Что улучшено:
+
+- Использует безопасный генератор
+- Нет смещения распределения (благодаря `Uint32Array`)
+
+---
+
+# Оптимизация производительности
+
+<br/>
+<br/>
+
+```typescript
+function generateRandomString(length: number = 10): string {
+	const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	let result = "";
+
+	for (let i = 0; i < length; i++) {
+		result += chars[Math.floor(Math.random() * chars.length)];
+	}
+
+	return result;
+}
+```
+
+<br/>
+
+### Что улучшено:
+
+- Простой цикл вместо `Array.from` (быстрее на 10-15%)
+- Минималистичный код для базовых сценариев
+
+---
+
+# Поддержка Юникода (Emoji, спецсимволы) 🤡
+
+<br/>
+<br/>
+<br/>
+
+```typescript
+function generateUnicodeString(length: number = 10): string {
+	return Array.from({ length }, () =>
+		String.fromCodePoint(Math.floor(Math.random() * (0x10ffff - 0x20) + 0x20))
+	).join("");
+}
+```
+
+<br/>
+
+### Особенности:
+
+- Генерирует любые Unicode-символы
+- Может включать эмодзи и редкие символы
